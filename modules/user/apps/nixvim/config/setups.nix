@@ -146,4 +146,11 @@
   };
 
   plugins.direnv.enable = true;
+
+  plugins.lazygit = {
+    enable = true;
+    # settings = {
+    #
+    # };
+  };
 }
