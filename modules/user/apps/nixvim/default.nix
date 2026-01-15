@@ -1,4 +1,6 @@
 {
+  myFunctions = ''v() { nvim "''${@:-.}"; }'';
+
   programs.nixvim = {
     enable = true;
     imports = [
