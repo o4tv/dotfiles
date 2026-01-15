@@ -1,8 +1,7 @@
 {
-  programs.lazygit = {
-    enable = true;
-    enableBashIntegration = true;
-  };
+  imports = [
+    ./lazygit.nix
+  ];
 
   programs.direnv = {
     enable = true;
