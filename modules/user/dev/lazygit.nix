@@ -1,4 +1,5 @@
 {
+  myAliases.lg = "lazygit";
 
   programs.lazygit = {
     enable = true;

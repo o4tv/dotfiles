@@ -100,5 +100,9 @@
       key = "<leader>cf";
       action.__raw = "require('conform').format";
     }
+    {
+      key = "<leader>lg";
+      action = "<cmd>LazyGit<CR>";
+    }
   ];
 }
