@@ -1,0 +1,67 @@
+#terminal.shell.program = "tmux"
+
+[window]
+decorations = "none"
+opacity = 0.9
+blur = true
+
+dimensions.columns = 0
+dimensions.lines = 0
+
+padding.x = 30
+padding.y = 30
+
+dynamic_padding = true
+
+startup_mode = "Windowed"
+
+[scrolling]
+history = 10000
+multiplier = 3
+
+[font]
+size = 13.0
+
+[font.normal]
+family = "JetBrainsMono Nerd Font Propo"
+style = "Regular"
+
+[font.bold]
+family = "JetBrainsMono Nerd Font Propo"
+style = "Bold"
+
+[font.italic]
+family = "JetBrainsMono Nerd Font Propo"
+style = "Italic"
+
+
+
+[colors]
+
+[colors.primary]
+background = "0x1A1A1A"   # terminal.background
+foreground = "0xBBBBBB"   # terminal.foreground
+
+[colors.cursor]
+text   = "0x1A1A1A"
+cursor = "0xF8F8F8"
+
+[colors.normal]
+black   = "0x1A1A1A"
+red     = "0xFA7584"
+green   = "0x79B8FF"
+yellow  = "0xFFAB70"
+blue    = "0xB392F1"
+magenta = "0xE394DC"
+cyan    = "0x79B8FF"
+white   = "0xBBBBBB"
+
+[colors.bright]
+black   = "0x5C5C5C"
+red     = "0xFF9CAA"
+green   = "0xA3D0FF"
+yellow  = "0xFFC9A3"
+blue    = "0xCFB8FF"
+magenta = "0xF3B8EC"
+cyan    = "0xA3D0FF"
+white   = "0xF8F8F8"
