@@ -1,21 +1,21 @@
-{ pkgs, ... }:
+{ pkgs, config, ... }:
 {
   imports = [
     ./aliases.nix
-    ./starship.nix
+    ./tools
   ];
 
   home.packages = with pkgs; [ bat ];
 
-  programs.eza = {
-    enable = true;
-    enableBashIntegration = false;
-  };
   programs.zoxide = {
     enable = true;
     enableBashIntegration = true;
     options = [ "--cmd cd" ];
   };
 
-  programs.bash.enable = true;
+  programs.bash = {
+    enable = true;
+    shellAliases = config.myAliases;
+    # initExtra = myFunctions;
+  };
 }
