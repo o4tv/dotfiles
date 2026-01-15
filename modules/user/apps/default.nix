@@ -3,6 +3,7 @@
   imports = [
     ./nixvim
     ./alacritty
+    ./yazi
   ];
 
   home.packages =
