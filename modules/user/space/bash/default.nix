@@ -3,7 +3,7 @@
 {
   imports = [
     ./aliases.nix
-    ./funcitons.nix
+    ./functions.nix
     ./tools
   ];
 
