@@ -7,6 +7,7 @@ let
     hsf = "home-manager switch --flake ~/.dotfiles/";
     asf = "nsf && hsf";
     vat = "bat";
+    y = "yy";
     c = "clear";
     q = "exit";
     ls = "eza -l";

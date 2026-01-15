@@ -93,33 +93,12 @@
         "type": "github"
       }
     },
-    "nypkgs": {
-      "inputs": {
-        "nixpkgs": [
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1761401328,
-        "narHash": "sha256-1Mylp3ZHkft5Sg5VzMpRRvSNsuuO/Oj+cBqjkFoOnRg=",
-        "owner": "yunfachi",
-        "repo": "nypkgs",
-        "rev": "193c13630997d000e72e9ae6f6bfe9b71f5c4b3f",
-        "type": "github"
-      },
-      "original": {
-        "owner": "yunfachi",
-        "repo": "nypkgs",
-        "type": "github"
-      }
-    },
     "root": {
       "inputs": {
         "home-manager": "home-manager",
         "nixpkgs": "nixpkgs",
         "nixpkgs-stable": "nixpkgs-stable",
-        "nixvim": "nixvim",
-        "nypkgs": "nypkgs"
+        "nixvim": "nixvim"
       }
     },
     "systems": {
