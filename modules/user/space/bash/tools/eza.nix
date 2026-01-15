@@ -1,4 +1,3 @@
-{ ... }:
 {
   myAliases = {
     ls = "eza -l";
