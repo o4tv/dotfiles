@@ -9,6 +9,7 @@
     xdg-desktop-portal-hyprland
     xdg-desktop-portal-gtk
     wl-clipboard
+    hyprshot
     hyprland
   ];
 
