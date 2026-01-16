@@ -16,5 +16,6 @@ with lib;
     asf = "nsf && hsf";
     c = "clear";
     q = "exit";
+    vd = "nvim ~/.dotfiles/";
   };
 }
