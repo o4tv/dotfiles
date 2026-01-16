@@ -8,7 +8,7 @@
       nix_shell.symbol = "❄️ ";
       directory.truncation_length = 8;
       character = {
-        success_symbol = "[𖹬](green)";
+        success_symbol = "[𖹬](purple)";
         error_symbol = "[✗](bold red)";
       };
     };
