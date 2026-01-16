@@ -21,7 +21,7 @@
     splash = false
     wallpaper {
         monitor = 
-        path = ~/.wallpapers/oloko.jpg
+        path = ~/.wallpapers/tt.jpg
         fit_mode = cover
     }
   '';
