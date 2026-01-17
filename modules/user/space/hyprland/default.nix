@@ -26,5 +26,6 @@
     }
   '';
 
-  programs.bash.profileExtra = "if uwsm check may-start; then\n    exec uwsm start hyprland.desktop\nfi";
+  # inicia hyprland sem dm somente no tty
+  programs.bash.profileExtra = ''[ -z "$WAYLAND_DISPLAY" ] && [ -z "$DISPLAY" ] && uwsm check may-start 2>/dev/null && exec uwsm start hyprland.desktop'';
 }
