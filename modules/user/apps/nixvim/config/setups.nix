@@ -148,6 +148,11 @@
     };
   };
 
+  plugins.todo-comments = {
+    enable = true;
+    settings.keywords.NOTE.alt = [ "EDIT" ];
+  };
+
   plugins.telescope = {
     enable = true;
     settings = {
