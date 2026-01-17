@@ -1,4 +1,6 @@
 {
-  programs.tmux.enable = true;
-  home.file.".config/tmux/tmux.conf".source = ./tmux.conf;
+  programs.tmux = {
+    enable = true;
+    extraConfig = builtins.readFile ./tmux.conf;
+  };
 }
