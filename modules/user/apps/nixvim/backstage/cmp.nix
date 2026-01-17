@@ -9,6 +9,10 @@
         documentation.auto_show = false;
         accept.auto_brackets.enabled = true;
       };
+      # sources.default = [ "lsp" "buffer" "snippets" "path" ];
+      sources.providers.snippets.opts.friendly_snippets = true;
     };
   };
+
+  plugins.friendly-snippets.enable = true;
 }
