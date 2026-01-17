@@ -9,6 +9,7 @@
   home.packages =
     (with pkgs; [
       kdePackages.dolphin
+      kdePackages.ark
     ])
     ++ (with pkgs-stable; [
     ]);
