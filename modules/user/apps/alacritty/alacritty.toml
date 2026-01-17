@@ -8,8 +8,8 @@ blur = true
 dimensions.columns = 0
 dimensions.lines = 0
 
-padding.x = 30
-padding.y = 30
+padding.x = 10
+padding.y = 10
 
 dynamic_padding = true
 
@@ -20,7 +20,7 @@ history = 10000
 multiplier = 3
 
 [font]
-size = 13.0
+size = 14.0
 
 [font.normal]
 family = "JetBrainsMono Nerd Font Propo"
