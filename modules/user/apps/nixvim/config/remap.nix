@@ -72,6 +72,10 @@
       action.__raw = "require('telescope.builtin').find_files";
     }
     {
+      key = "<leader>fd";
+      action = "<cmd>Telescope find_files hidden=true no_ignore=true<CR>";
+    }
+    {
       key = "<leader>fg";
       action.__raw = "require('telescope.builtin').live_grep";
     }

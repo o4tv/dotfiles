@@ -1,5 +1,10 @@
-{ lib, ... }:
+{ lib, pkgs, ... }:
 {
+  # dependencias
+  home.packages = with pkgs; [
+    ripgrep
+  ];
+
   plugins.toggleterm = {
     enable = true;
     settings = {
@@ -156,9 +161,16 @@
   plugins.telescope = {
     enable = true;
     settings = {
-      defaults.layout_config = {
-        mirror = true;
-        horizontal.preview_width = 0.6;
+      defaults = {
+        layout_config = {
+          mirror = true;
+          horizontal.preview_width = 0.6;
+        };
+        file_ignore_patterns = [
+          "node_modules"
+          "^.git/"
+          "^.direnv/"
+        ];
       };
     };
   };
