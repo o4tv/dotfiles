@@ -43,12 +43,21 @@
     signs = true;
   };
   files = {
-    "ftplugin/nix.lua" = {
-      opts = {
-        expandtab = true;
-        shiftwidth = 2;
-        tabstop = 2;
-      };
+    "ftplugin/nix.lua".opts = {
+      shiftwidth = 2;
+      tabstop = 2;
+    };
+    "ftplugin/javascript.lua".opts = {
+      shiftwidth = 2;
+      tabstop = 2;
+    };
+    "ftplugin/typescript.lua".opts = {
+      shiftwidth = 2;
+      tabstop = 2;
+    };
+    "ftplugin/html.lua".opts = {
+      shiftwidth = 2;
+      tabstop = 2;
     };
   };
 

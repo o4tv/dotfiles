@@ -105,7 +105,7 @@
       action = "<cmd>LazyGit<CR>";
     }
     {
-      key = "<c-/>";
+      key = "<c-\\>";
       action = "<cmd>ToggleTerm<CR>";
     }
   ];
