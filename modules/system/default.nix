@@ -4,6 +4,7 @@
     ./boot.nix
     ./network.nix
     ./desktop
+    ./dev
   ];
 
   fonts.packages = with pkgs; [
