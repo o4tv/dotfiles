@@ -10,7 +10,8 @@
     (with pkgs; [
       kdePackages.dolphin
       kdePackages.ark
-    ])
+      appimage-run
+   ])
     ++ (with pkgs-stable; [
     ]);
 }
