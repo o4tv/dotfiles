@@ -1,6 +1,7 @@
 {
   imports = [
     ./lazygit.nix
+    ./distrobox.nix
   ];
 
   programs.direnv = {
