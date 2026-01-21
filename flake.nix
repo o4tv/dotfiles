@@ -38,18 +38,25 @@
       nixosConfigurations = {
         dex = lib.nixosSystem {
           inherit system;
-          modules = [ ./configuration.nix ];
+          modules = [ ./hosts/dex/configuration.nix ];
           specialArgs = {
             inherit pkgs-stable;
           };
         };
+        # dex_jr = lib.nixosSystem {
+        #   inherit system;
+        #   modules = [ ./configuration.nix ];
+        #   specialArgs = {
+        #     inherit pkgs-stable;
+        #   };
+        # };
       };
       homeConfigurations = {
         otavio = home-manager.lib.homeManagerConfiguration {
           inherit pkgs;
           modules = [
             nixvim.homeModules.nixvim
-            ./modules/user/home.nix
+            ./users/otavio/home.nix
             # {
             #     nixpkgs.overlays = overlays;
             # }

@@ -1,9 +1,8 @@
 { pkgs, ... }:
-
 {
   imports = [
     ./hardware-configuration.nix
-    ./modules/system
+    ./system
   ];
 
   time.timeZone = "America/Fortaleza";
