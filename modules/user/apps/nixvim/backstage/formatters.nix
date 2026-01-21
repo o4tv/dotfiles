@@ -8,6 +8,8 @@
         # lua = [ "stylua" ];
         javascript = [ "prettier" ];
         typescript = [ "prettier" ];
+        javascriptreact = [ "prettier" ];
+        typescriptreact = [ "prettier" ];
         nix = [ "nixfmt" ];
       };
       formatters = {

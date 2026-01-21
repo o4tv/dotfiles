@@ -10,7 +10,13 @@
         accept.auto_brackets.enabled = true;
       };
       # sources.default = [ "lsp" "buffer" "snippets" "path" ];
-      sources.providers.snippets.opts.friendly_snippets = true;
+      sources.providers.snippets.opts = {
+        friendly_snippets = true;
+        extended_filetypes = {
+          typescriptreact = [ "html" ];
+          javascriptreact = [ "html" ];
+        };
+      };
     };
   };
 

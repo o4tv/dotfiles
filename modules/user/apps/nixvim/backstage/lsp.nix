@@ -13,6 +13,7 @@
       bashls.enable = true;
       pyright.enable = true;
       html.enable = true;
+      cssls.enable = true;
       vue_ls.enable = true;
     };
   };
@@ -30,6 +31,13 @@
           }
         ];
       };
+    };
+  };
+
+  plugins.lsp.servers.eslint = {
+    enable = true;
+    settings = {
+      workingDirectory.mode = "auto";
     };
   };
 
