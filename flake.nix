@@ -43,13 +43,13 @@
             inherit pkgs-stable;
           };
         };
-        # dex_jr = lib.nixosSystem {
-        #   inherit system;
-        #   modules = [ ./configuration.nix ];
-        #   specialArgs = {
-        #     inherit pkgs-stable;
-        #   };
-        # };
+        dex_jr = lib.nixosSystem {
+          inherit system;
+          modules = [ ./hosts/dex_jr/configuration.nix ];
+          specialArgs = {
+            inherit pkgs-stable;
+          };
+        };
       };
       homeConfigurations = {
         otavio = home-manager.lib.homeManagerConfiguration {
