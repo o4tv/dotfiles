@@ -15,10 +15,9 @@ in
   };
 
   services.openssh = {
-  enable = true;
-  # permitRootLogin = "prohibit-password"; # Ou "no", "without-password", etc.
-  passwordAuthentication = true;
-  allowUsers = [ "otavio" ];
-};
+    enable = true;
+    # permitRootLogin = "prohibit-password"; # Ou "no", "without-password", etc.
+    passwordAuthentication = true;
+  };
 
 }
