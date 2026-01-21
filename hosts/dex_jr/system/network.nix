@@ -1,6 +1,6 @@
 let
   allowedPorts = [
-    # 5173 # vite
+    22
   ];
 in
 {
@@ -13,4 +13,12 @@ in
     allowedTCPPorts = allowedPorts;
     allowedUDPPorts = allowedPorts;
   };
+
+  services.openssh = {
+  enable = true;
+  # permitRootLogin = "prohibit-password"; # Ou "no", "without-password", etc.
+  passwordAuthentication = true;
+  allowUsers = [ "otavio" ];
+};
+
 }
