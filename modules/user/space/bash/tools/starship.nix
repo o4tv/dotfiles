@@ -5,7 +5,7 @@
   programs.starship = {
     enable = true;
     settings = {
-      nix_shell.symbol = "❄️ ";
+      nix_shell.symbol = "❄️";
       directory = {
         style = "bold dimmed blue";
         truncation_length = 8;
