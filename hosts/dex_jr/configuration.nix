@@ -4,10 +4,10 @@
     ./system
   ];
 
-  services.getty.autologinUser = "serve";
-  users.users.serve = {
+  services.getty.autologinUser = "otavio";
+  users.users.otavio = {
     isNormalUser = true;
-    description = "serve";
+    description = "otavio";
     extraGroups = [
       "networkmanager"
       "wheel"
