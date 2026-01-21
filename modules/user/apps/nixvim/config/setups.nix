@@ -1,11 +1,5 @@
-{ lib, pkgs, ... }:
+{ lib, ... }:
 {
-  # dependencias
-  home.packages = with pkgs; [
-    ripgrep
-    fd
-  ];
-
   plugins.toggleterm = {
     enable = true;
     settings = {

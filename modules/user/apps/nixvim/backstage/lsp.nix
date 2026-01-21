@@ -1,10 +1,5 @@
 { lib, pkgs, ... }:
 {
-  # dependencias
-  home.packages = with pkgs; [
-    vue-language-server
-  ];
-
   plugins.lsp = {
     enable = true;
     servers = {
