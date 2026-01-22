@@ -1,5 +1,5 @@
 {
-  programs.bash.profileExtra = ''[ -n "$SSH_CONNECTION" ] && [ -z "$TMUX" ] && (tmux attach -t main || tmux new -s main)'';
+  programs.bash.profileExtra = ''[ -n "$SSH_CONNECTION" ] && [ -z "$TMUX" ] && (tmux attach || tmux new)'';
 
   programs.tmux = {
     enable = true;
