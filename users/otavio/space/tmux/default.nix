@@ -5,4 +5,6 @@
     enable = true;
     extraConfig = builtins.readFile ./tmux.conf;
   };
+
+  home.file.".tmux/plugins".source = ./plugins;
 }
