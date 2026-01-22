@@ -4,7 +4,7 @@
     ./system
   ];
 
-  services.getty.autologinUser = "otavio";
+  # services.getty.autologinUser = "otavio";
   users.users.otavio = {
     isNormalUser = true;
     description = "otavio";
