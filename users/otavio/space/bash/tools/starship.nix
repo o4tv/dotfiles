@@ -16,10 +16,12 @@
       };
       container.disabled = true;
       hostname = {
+        ssh_symbol = "🌏";
         style = "bold dimmed red";
         disabled = false;
         ssh_only = false;
       };
+      username.style_user = "bold purple dimmed";
       custom.distrobox = {
         command = ''printf "%s" "$CONTAINER_ID"'';
         when = ''test -n "$CONTAINER_ID"'';
