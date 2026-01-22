@@ -4,12 +4,12 @@ let
   ];
 in
 {
-  networking.hostName = "dex";
+  networking.hostName = "dexjr";
 
   networking.networkmanager.enable = true;
 
   networking.firewall = {
-    enable = true;
+    enable = false;
     allowedTCPPorts = allowedPorts;
     allowedUDPPorts = allowedPorts;
   };

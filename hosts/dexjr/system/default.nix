@@ -17,6 +17,7 @@
     EDITOR = "nvim";
     VISUAL = "nvim";
     SUDO_EDITOR = "nvim";
+    CANT_RUN = "1";
   };
 
   # remove bloat

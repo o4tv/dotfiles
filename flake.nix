@@ -43,9 +43,9 @@
             inherit pkgs-stable;
           };
         };
-        dex_jr = lib.nixosSystem {
+        dexjr = lib.nixosSystem {
           inherit system;
-          modules = [ ./hosts/dex_jr/configuration.nix ];
+          modules = [ ./hosts/dexjr/configuration.nix ];
           specialArgs = {
             inherit pkgs-stable;
           };
