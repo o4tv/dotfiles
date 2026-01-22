@@ -11,6 +11,7 @@ with lib;
     ".." = "cd ..";
     "..." = "cd ../..";
     "...." = "cd ../../..";
+    "cs" = "cd ~/.dotfiles/";
     nsf = "sudo nixos-rebuild switch --flake ~/.dotfiles/";
     hsf = "home-manager switch --flake ~/.dotfiles/";
     asf = "nsf && hsf";
