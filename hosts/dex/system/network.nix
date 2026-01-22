@@ -13,7 +13,7 @@ in
   };
 
   networking.firewall = {
-    enable = true;
+    enable = false;
     allowedTCPPorts = allowedPorts;
     allowedUDPPorts = allowedPorts;
   };
