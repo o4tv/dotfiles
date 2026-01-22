@@ -17,5 +17,9 @@ with lib;
 
         nix flake init -t "path:/home/otavio/dev/templates#$1"
     }
+
+    dex() {
+        ssh otavio@192.168.0.$1
+    }
   '';
 }
