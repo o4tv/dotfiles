@@ -3,7 +3,7 @@
     ./theme
     ./bash
     ./tmux
-    ./hyprland
+    # ./hyprland
     ./sway
   ];
 }

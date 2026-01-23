@@ -111,4 +111,9 @@ bar {
     # }
 }
 
+# disable titlebar and borders
+for_window [title="^.*"] title_format ""
+default_border none
+default_floating_border normal 0
+
 include /etc/sway/config.d/*
