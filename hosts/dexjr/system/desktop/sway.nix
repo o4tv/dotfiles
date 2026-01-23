@@ -1,7 +1,6 @@
 {
-  programs.hyprland = {
+  programs.sway = {
     enable = true;
-    withUWSM = true;
     xwayland.enable = true;
   };
 }

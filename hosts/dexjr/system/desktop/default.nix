@@ -1,6 +1,6 @@
 {
   imports = [
-    # ./hyprland.nix
+    ./sway.nix
   ];
 
   services.pulseaudio.enable = false;
