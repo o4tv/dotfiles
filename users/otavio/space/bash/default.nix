@@ -1,5 +1,7 @@
 { config, ... }:
-
+let
+  options = [];
+in
 {
   imports = [
     ./aliases.nix
