@@ -13,6 +13,10 @@
       url = "github:nix-community/nixvim";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    spicetify-nix = {
+      url = "github:Gerg-L/spicetify-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
@@ -22,6 +26,7 @@
       nixpkgs-stable,
       home-manager,
       nixvim,
+      spicetify-nix,
       ...
     }@inputs:
     let
@@ -57,6 +62,7 @@
           modules = [
             nixvim.homeModules.nixvim
             ./users/otavio/home.nix
+            spicetify-nix.homeManagerModules.default
             # {
             #     nixpkgs.overlays = overlays;
             # }
@@ -64,6 +70,7 @@
           extraSpecialArgs = {
             inherit pkgs-stable;
             inherit inputs;
+            inherit spicetify-nix;
           };
         };
       };

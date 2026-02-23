@@ -4,6 +4,7 @@
     ./nixvim
     ./alacritty
     ./yazi
+    ./spicetify
   ];
 
   home.packages =
