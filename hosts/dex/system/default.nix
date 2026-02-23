@@ -4,6 +4,7 @@
     ./boot.nix
     ./network.nix
     ./packages.nix
+    ./services.nix
     ./desktop
     ./dev
   ];
