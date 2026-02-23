@@ -32,8 +32,20 @@
     let
       lib = nixpkgs.lib;
       system = "x86_64-linux";
-      pkgs = nixpkgs.legacyPackages.${system};
-      pkgs-stable = nixpkgs-stable.legacyPackages.${system};
+      # pkgs = nixpkgs.legacyPackages.${system};
+      # pkgs-stable = nixpkgs-stable.legacyPackages.${system};
+      pkgs = import nixpkgs {
+        inherit system;
+        config = {
+          allowUnfree = true;
+        };
+      };
+      pkgs-stable = import nixpkgs-stable {
+        inherit system;
+        config = {
+          allowUnfree = true;
+        };
+      };
 
       # overlays = [
       #     inputs.neovim-nightly-overlay.overlays.default
