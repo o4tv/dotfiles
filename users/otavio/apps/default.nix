@@ -12,6 +12,7 @@
       kdePackages.dolphin
       kdePackages.ark
       appimage-run
+      prismlauncher
    ])
     ++ (with pkgs-stable; [
     ]);
