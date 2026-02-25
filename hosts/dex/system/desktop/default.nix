@@ -16,4 +16,11 @@
     pulse.enable = true;
     jack.enable = true;
   };
+
+  # disable mouse scroll
+  environment.etc."libinput/local-overrides.quirks".text = ''
+    [Disable Mouse Scroll]
+    MatchUdevType=mouse
+    AttrEventCode=-REL_WHEEL;-REL_HWHEEL;-REL_WHEEL_HI_RES;-REL_HWHEEL_HI_RES;
+  '';
 }
