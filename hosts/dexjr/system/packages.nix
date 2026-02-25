@@ -6,6 +6,5 @@
     git
     uwsm
     fastfetch
-    google-chrome
   ];
 }

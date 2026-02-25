@@ -13,6 +13,7 @@
       kdePackages.ark
       appimage-run
       prismlauncher
+      google-chrome
    ])
     ++ (with pkgs-stable; [
     ]);
