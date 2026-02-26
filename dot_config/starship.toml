@@ -1,0 +1,14 @@
+[directory]
+style = "bold dimmed blue"
+truncation_length = 8
+
+[character]
+success_symbol = "[𖹬](purple)"
+error_symbol = "[✗](bold red)"
+
+[username]
+style_user = "bold purple dimmed"
+
+[container]
+disabled = true
+
