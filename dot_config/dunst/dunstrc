@@ -1,0 +1,4 @@
+[disable_browserlock]
+    body = "*BrowserLock*"
+    history_ignore = yes
+    skip_display = yes
