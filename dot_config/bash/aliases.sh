@@ -18,3 +18,4 @@ alias lt="eza -TL2"
 alias lta="eza -aTL2"
 alias ltla="eza -laTL2"
 
+alias bios="systemctl reboot --firmware-setup"
