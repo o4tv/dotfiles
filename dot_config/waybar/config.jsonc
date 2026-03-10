@@ -15,10 +15,11 @@
   "modules-center": ["clock"],
 
   "modules-right": [
+    "tray",
     "custom/light",
     "bluetooth",
     "network",
-    "pulseaudio", 
+    "pulseaudio",
     "backlight",
     "battery",
   ],
@@ -27,6 +28,11 @@
     "exec": "$HOME/.config/waybar/scripts/light.sh",
     "interval": 5,
     "on-click": "$HOME/.config/waybar/scripts/toggle_light.sh",
+  },
+
+  "tray": {
+    "icon-size": 25,
+    "spacing": 10
   },
 
   "hyprland/workspaces": {
