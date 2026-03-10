@@ -40,6 +40,7 @@
   margin-right: 5px; /* Spacing after the workspaces module */
 }
 
+#tray,
 #custom-light,
 #memory {
   margin: 5px 5px
@@ -200,11 +201,13 @@
   color: #babbf1;
 }
 #bluetooth {
-  color: #888888;
+  /* color: #888888; */
+  color: #e78284;
   font-size: 16px;
 }
 #bluetooth.on {
-  color: #2196f3;
+  /* color: #2196f3; */
+  color: #c6d0f5;
 }
 #bluetooth.connected {
   color: #99d1db;
