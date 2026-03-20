@@ -18,4 +18,8 @@ alias lt="eza -TL2"
 alias lta="eza -aTL2"
 alias ltla="eza -laTL2"
 
+alias cmc="chezmoi cd"
+alias cme="chezmoi edit"
+alias cma="chezmoi apply"
+
 alias bios="systemctl reboot --firmware-setup"
