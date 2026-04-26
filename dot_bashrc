@@ -10,5 +10,4 @@
 # PS1='[\u@\h \W]\$ '
 
 source $HOME/.config/bash/rc
-source /usr/share/nvm/init-nvm.sh
 
