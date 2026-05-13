@@ -11,6 +11,14 @@ case ":$PATH:" in
 esac
 # pnpm end
 
+function y() {
+  local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+  command yazi "$@" --cwd-file="$tmp"
+  IFS= read -r -d '' cwd < "$tmp"
+  [ "$cwd" != "$PWD" ] && [ -d "$cwd" ] && builtin cd -- "$cwd"
+  rm -f -- "$tmp"
+}
+
 source /usr/share/nvm/init-nvm.sh
 eval "$(zoxide init bash --cmd cd)"
 eval "$(starship init bash)"
