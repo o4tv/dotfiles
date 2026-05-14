@@ -2,7 +2,6 @@
   process-unmapped-keys   yes
   concurrent-tap-hold     yes
   allow-hardware-repeat   no
-  ipc yes
 )
 
 (defsrc
