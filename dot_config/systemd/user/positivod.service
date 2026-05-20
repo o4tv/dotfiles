@@ -1,0 +1,14 @@
+[Unit]
+Description=Positivo Light Daemon
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+# WorkingDirectory=%h/.local/lib/positivo-light
+ExecStart=/home/tabin/.local/bin/positivod
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=default.target
