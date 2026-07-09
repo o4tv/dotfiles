@@ -1,0 +1,12 @@
+[Unit]
+Description=Kanata Layer Switcher
+After=graphical-session.target
+
+[Service]
+ExecStart=%h/.local/bin/hyprkan -p 7071
+Restart=on-failure
+RestartSec=5
+Type=simple
+
+[Install]
+WantedBy=graphical-session.target
