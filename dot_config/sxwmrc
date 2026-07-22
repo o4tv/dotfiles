@@ -1,0 +1,122 @@
+#==================================================
+# Appearance
+#==================================================
+
+focused_border_colour    : #5511bb
+unfocused_border_colour  : #414868
+swap_border_colour       : #eeeeee
+
+gaps                  : 10
+border_width          : 2
+motion_throttle       : 60
+
+master_width          : 60
+resize_master_amount  : 2
+resize_stack_amount   : 20
+
+move_window_amount    : 50
+resize_window_amount  : 50
+
+new_win_focus         : true
+warp_cursor           : true
+floating_on_top       : true
+
+mod_key : super
+
+#==================================================
+# Window Manager
+#==================================================
+
+call : mod + r : reload_config
+call : mod + shift + e : quit
+
+call : mod + equal : increase_gaps
+call : mod + minus : decrease_gaps
+
+bind : XF86AudioRaiseVolume : "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+"
+bind : XF86AudioLowerVolume : "wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
+bind : XF86AudioMute : "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+
+bind : Button9 : "vivaldi"
+
+#==================================================
+# Launchers
+#==================================================
+
+bind : mod + Return : "kitty"
+bind : mod + shift + Return : "kitty -e tmux new -A"
+
+bind : mod + space : "rofi -show drun"
+bind : mod + e : "dolphin"
+bind : mod + b : "firefox-bin"
+
+bind : mod + v : "sh -c 'cliphist list | rofi -dmenu -display-columns 2 | cliphist decode | wl-copy'"
+bind : mod + p : "flameshot gui"
+
+call : mod + Up : scroll_up
+call : mod + Down : scroll_down
+
+#==================================================
+# Window Management
+#==================================================
+
+call : mod + q : close_window
+
+call : mod + f : fullscreen
+# call : mod + shift + space : global_floating
+call : mod + shift + space : toggle_floating
+
+#==================================================
+# Master / Stack
+#==================================================
+
+# Navega entre as janelas
+call : mod + j : focus_next
+call : mod + k : focus_prev
+
+# Promove/rebaixa janelas
+call : mod + shift + j : master_next
+call : mod + shift + k : master_prev
+
+# Ajusta largura do master
+call : mod + h : master_decrease
+call : mod + l : master_increase
+
+# Ajusta altura da stack
+call : mod + ctrl + h : stack_decrease
+call : mod + ctrl + l : stack_increase
+
+#==================================================
+# Monitores
+#==================================================
+
+call : mod + alt + h : focus_prev_mon
+call : mod + alt + l : focus_next_mon
+
+call : mod + shift + comma : move_prev_mon
+call : mod + shift + period : move_next_mon
+
+#==================================================
+# Workspaces
+#==================================================
+
+# Workspaces (1-9)
+workspace : mod + 1          : move 1
+workspace : mod + shift + 1  : swap 1
+workspace : mod + 2          : move 2
+workspace : mod + shift + 2  : swap 2
+workspace : mod + 3          : move 3
+workspace : mod + shift + 3  : swap 3
+workspace : mod + 4          : move 4
+workspace : mod + shift + 4  : swap 4
+workspace : mod + 5          : move 5
+workspace : mod + shift + 5  : swap 5
+workspace : mod + 6          : move 6
+workspace : mod + shift + 6  : swap 6
+workspace : mod + 7          : move 7
+workspace : mod + shift + 7  : swap 7
+workspace : mod + 8          : move 8
+workspace : mod + shift + 8  : swap 8
+workspace : mod + 9          : move 9
+workspace : mod + shift + 9  : swap 9
+

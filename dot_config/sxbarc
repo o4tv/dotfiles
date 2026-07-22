@@ -1,0 +1,57 @@
+# layout and style
+bottom_bar          : false
+height              : 20
+vertical_padding    : 0
+horizontal_padding  : 0
+text_padding        : 0
+border              : false
+border_width        : 0
+
+background_colour   : #212434
+foreground_colour   : #eeeeee
+border_colour       : #717394
+
+font                : JetBrainsMono Nerd Font Propo Bold
+font_size           : 15
+
+# modules
+module.0.name       : clock
+module.0.cmd        : date '+%H:%M:%S'
+module.0.enabled    : true
+module.0.interval   : 1
+
+module.1.name       : date
+module.1.cmd        : date '+%Y-%m-%d'
+module.1.enabled    : true
+module.1.interval   : 60
+
+module.2.name       : battery
+module.2.cmd        : cat /sys/class/power_supply/BAT0/capacity 2>/dev/null | sed 's/$/%/' || echo 'N/A'
+module.2.enabled    : true
+module.2.interval   : 30
+
+module.3.name       : volume
+module.3.cmd        : wpctl get-volume @DEFAULT_AUDIO_SINK@ 2>/dev/null | awk '{printf "%d%%\n", $2 * 100}'
+module.3.enabled    : true
+module.3.interval   : 1
+
+# module.4.name       : cpu
+# module.4.cmd        : top -bn1 | grep 'Cpu(s)' | sed 's/.*, *\([0-9.]*\)%* id.*/\1/' | awk '{print 100-$1"%"}'
+# module.4.enabled    : true
+# module.4.interval   : 3
+#
+# module.5.name       : mem
+# module.5.cmd        : free -h | awk '/^Mem/ { print $3 }' | sed s/i//g
+# module.5.enabled    : true
+# module.5.interval   : 3
+
+# workspaces.labels              : one two three four five six seven eight nine
+workspaces.labels              : I II III IV V VI VII VIII IX
+workspaces.active_background   : #5511bb
+workspaces.active_foreground   : #eeeeee
+workspaces.inactive_background : #212434
+workspaces.inactive_foreground : #eeeeee
+workspaces.padding_left        : 10
+workspaces.padding_right       : 10
+workspaces.spacing             : 0
+workspaces.position            : left

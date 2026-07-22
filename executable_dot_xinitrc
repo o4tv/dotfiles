@@ -1,0 +1,4 @@
+[ -f ~/.xprofile ] && . ~/.xprofile
+
+sxbar &
+exec dbus-run-session sxwm
