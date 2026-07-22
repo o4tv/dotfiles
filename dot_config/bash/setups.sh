@@ -3,6 +3,8 @@ export PATH="$PATH:$HOME/.local/bin"
 [[ -f /usr/share/bash-completion/bash_completion ]] && \
   . /usr/share/bash-completion/bash_completion
 
+export XDG_DATA_DIRS="$XDG_DATA_DIRS:/var/lib/flatpak/exports/share:/home/tavin/.local/share/flatpak/exports/share"
+
 # pnpm
 export PNPM_HOME="/home/tabin/.local/share/pnpm"
 case ":$PATH:" in
@@ -19,11 +21,10 @@ function y() {
   rm -f -- "$tmp"
 }
 
-source /usr/share/nvm/init-nvm.sh
+# source /usr/share/nvm/init-nvm.sh
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
 eval "$(zoxide init bash --cmd cd)"
 eval "$(starship init bash)"
-eval "$(codex completion)"
-
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
