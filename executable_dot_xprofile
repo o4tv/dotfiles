@@ -1,0 +1,17 @@
+# variables
+export QT_QPA_PLATFORMTHEME=qt6ct
+
+/usr/libexec/polkit-gnome-authentication-agent-1 &
+
+# monitor
+xrandr --output HDMI-A-0 --primary --right-of eDP
+
+# audio
+gentoo-pipewire-launcher &
+
+# kb rate
+xset r rate 300 50
+
+# wallpaper
+#xsetroot -solid "#1a1b26" &
+
